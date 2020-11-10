@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <ul class="form-list">
+                <li class="form-name">
+                    <label for="name">Name</label>
+                    <input id="name" type="name" name="name">
+                </li>
+                <li class="form-email">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email">
+                </li>
+                <li class="form-phone">
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="tel" name="phone">                   
+                </li>
+                <li class="form-checkbox">
+                    <input id="checkbox" type="checkbox" name="checkbox">
+                    <label for="checkbox">I accept the Terms and Conditions.</label>
+                </li>
+            </ul>
+            <button disabled type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="backdrop">
+        <div class="modal">
+            <i class="far fa-check-circle"></i>
+            <h3>Your data has been successfully sent</h3>
+            <button class="close-modal">OK</button>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</body>
+</html>

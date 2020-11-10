@@ -1,0 +1,110 @@
+body {
+  font-family: "Goldman", cursive;
+  margin: 0;
+  padding: 0;
+  background-color: darkgoldenrod;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  width: 600px;
+  padding-bottom: 30px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+li {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-checkbox {
+  display: block;
+}
+
+input {
+  font-size: 20px;
+  font-family: "Goldman", cursive;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid #0f0f0f;
+  background: none;
+}
+
+button {
+  font-size: 16px;
+  font-family: "Goldman", cursive;
+  background-color: #0f0f0f;
+  border: 2px solid #0f0f0f;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+button:disabled {
+  background-color: grey;
+  border: 2px solid grey;
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hiden;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.modal {
+  background-color: #fff;
+  width: 40%;
+  text-align: center;
+  padding: 150px;
+  border-radius: 15px;
+}
+
+i {
+  font-size: 50px;
+  color: rgb(31, 182, 63);
+}
+
+h3 {
+  margin: 50px 0;
+}
